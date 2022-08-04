@@ -43,7 +43,7 @@
                 &:after {
                     content: '';
                     width: 1px;
-                    height: 100%;
+                    height: calc(100% + 16px);
                     position: absolute;
                     top: -16px;
                     left: 0;
@@ -53,13 +53,27 @@
         }
     }
     &__item {
+        position: relative;
+        &:before {
+            content: '';
+            height: 1px;
+            width: 45px;
+            position: absolute;
+            top: 68px;
+            background-color: #000;
+        }
         &-head {
             position: relative;
             padding: 45px 0 0 100px;
+            h4 {
+                margin-bottom: 0;
+            }
         }
         &-body {
             padding-left: 43px;
             margin-top: 12px;
+            font-size: 12px;
+            line-height: 18px;
         }
         &-icon {
             position: absolute;
@@ -75,6 +89,7 @@
         &-location {
             font-size: 12px;
             line-height: 18px;
+            margin-top: 5px;
         }
     }
 }
