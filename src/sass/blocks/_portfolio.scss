@@ -1,6 +1,6 @@
 .portfolio {
     padding-top: 120px;
-    &__title {
+    /* &__title {
         position: relative;
         text-align: center;
         padding-left: 0;
@@ -13,7 +13,7 @@
     }
     &__subtitle {
         text-align: center;
-    }
+    } */
     &__wrapper {
         margin-top: 60px;
         display: grid;
@@ -36,6 +36,7 @@
         }
         &:hover {
             transform: scale(1.05);
+            filter: opacity(50%);
         }
     }
 }
